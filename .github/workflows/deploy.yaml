@@ -8,7 +8,7 @@ permissions:
       contents: read
 
 env:
-  ARM_USE_MSI: true
+  ARM_USE_OICD: true
       
 jobs: 
   deploy:
