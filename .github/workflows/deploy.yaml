@@ -6,6 +6,9 @@ on:
 permissions:
       id-token: write
       contents: read
+
+env:
+  ARM_USE_MSI: true
       
 jobs: 
   deploy:
