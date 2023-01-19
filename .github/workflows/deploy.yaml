@@ -2,8 +2,18 @@ name: Terraform Deploy
 on:
   push:
     branches: main
+    paths:
+      - "*.tf"
+      - "modules/**"
+      - ".github/terraform/**"
+      - ".github/workflows/deploy.yaml"
   pull_request:
     branches: main
+    paths:
+      - "*.tf"
+      - "modules/**"
+      - ".github/terraform/**"
+      - ".github/workflows/deploy.yaml"
 
 permissions:
   id-token: write
